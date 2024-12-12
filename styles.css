@@ -1,87 +1,120 @@
-h1, h2, h3, h4 {
-    font-family: 'Avenir Next', sans-serif;
-    margin: 20px 0;
-    padding: 10px 0;
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/outfit-regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-p, h1, h2, h3, h4, h5, li {
-    margin: 10px 0;
+@font-face {
+    font-family: "Outfit";
+    src: url("fonts/outfit-light.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
-body, p {
-    font-family: 'Outfit', sans-serif;
-    background-color: rgb(36 50 74);
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
+    font-family: "Outfit", sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    background-color: rgb(36, 50, 74);
+    color: rgb(237, 222, 194);
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    box-sizing: border-box;
 }
 
-p {
-    font-size: 14px; 
-    font-weight: 300; 
-    color: rgb(237 222 194);
-    line-height: 1.8;
-    margin-top: 10px;
-}
-
-li {
-    font-size: 14px; 
-    font-weight: 300; 
-    color: rgb(237 222 194);
-    line-height: 1.5;
-}
-
-header {
-    text-align: left;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-top: 40px;
-    margin-left: 40px;
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: rgb(221, 171, 75);
 }
 
 h1 {
     font-size: 32px;
-    font-weight: bold; 
-    color: rgb(221 171 75);
-    padding-top: 40px;
-    padding-bottom: 15px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 h2 {
     font-size: 24px;
-    font-weight: 700; 
-    color: rgb(221 171 75);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 20px;
-    font-weight: 600; 
-    color: rgb(221 171 75);
+    font-weight: 600;
 }
 
 h4 {
     font-size: 16px;
-    font-weight: 500; 
-    color: rgb(221 171 75);
-    margin-top: -10px;
-    margin-bottom: -10px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 h5 {
     font-size: 16px;
-    font-weight: 500; 
-    color: rgb(221 171 75);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
-.section-divider {
-    border: none;
-    border-top: 2px solid rgb(162, 69, 88);
-    margin: 0px;
-    width: 100%;
+p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(237, 222, 194);
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgb(237, 222, 194);
+}
+
+ul {
+    margin-bottom: 45px;
 }
 
 .section {
@@ -108,8 +141,8 @@ header .nav-toggle-label {
     cursor: pointer;
     height: 20px;
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     width: 26px;
     z-index: 1001;
 }
@@ -157,8 +190,8 @@ nav ul {
 nav ul li a {
     color: rgb(221 171 75);
     display: block;
-    font-size: 1.25rem;
-    padding: 1rem;
+    font-size: 20px;
+    padding: 16px;
     text-decoration: none;
 }
 
@@ -204,7 +237,7 @@ form button {
     text-align: center;
     line-height: 46px;
     text-decoration: none;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     border-radius: 0px;
     border: none;
     outline: none;
@@ -229,8 +262,8 @@ img {
     display: block;
     margin-left: -5px;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 15px auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
     width: 70%;
 }
 
@@ -240,6 +273,15 @@ img {
     width: 70%; 
     max-width: 300px; 
     height: auto; 
+}
+
+.home-page .image-container {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.home-page .center-image {
+    padding: 0px; 
 }
 
 .image-container {
@@ -255,7 +297,7 @@ img {
     left: 20px;
     width: 220px;
     height: 220px;
-    background-color: rgb(162, 69, 88);
+    background-color: rgb(116 47 61);
 }
 
 .image-container img {
@@ -281,18 +323,36 @@ main {
 
 main.centered {
     max-width: 292px;
-    margin: 0 auto;
-    padding: 20px;
+    margin-left: 50px;
 }
 
 .logo img {
-    width: 80px; 
-    height: auto; 
-    border: none; 
-    margin: 0; 
-    display: inline-block; 
+    width: 80px;
+    height: auto;
+    border: none;
 }
 
 .logo {
     display: inline-block;
+    margin-left: 20px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: start; 
+    margin-top: 30px;
+}
+
+.contact-links a {
+    font-size: 16px; 
+    text-decoration: underline;
+    color: rgb(36, 147, 170); 
+}
+
+.graduation {
+    margin-bottom: 10px; 
 }
